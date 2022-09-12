@@ -52,6 +52,10 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
+
+//            Rows & Columns
+
+
 //            Column(modifier = Modifier
 //                .padding(150.dp)
 ////                .padding(175.dp,375.dp,175.dp,400.dp)
@@ -69,13 +73,20 @@ class MainActivity : ComponentActivity() {
 //                Text(text = "World")
 //                Text(text = "Good Eve")
 
+
+
 //            ImageCard
+
+
 //            val painter = painterResource(id = R.drawable.image)
 //            val description = "Branch Fest of Computer Science and Engineering Dept."
 //            val title = "Branch Fest of CSE Dept."
 //            ImageCard(painter =painter, title =title, contentDescription =description)
 
+
+
 //        Text Styling
+
 
             Box(modifier = Modifier
                 .background(Color(0xFF101010))
