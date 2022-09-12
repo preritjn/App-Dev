@@ -6,15 +6,16 @@ import android.os.ParcelFileDescriptor
 import android.view.RoundedCorner
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
@@ -35,19 +36,21 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlinx.coroutines.launch
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val fontFamily= FontFamily(
-            Font(R.font.lexend_thin,FontWeight.Thin),
-            Font(R.font.lexend_light,FontWeight.Light),
-            Font(R.font.lexend_regular,FontWeight.Normal),
-            Font(R.font.lexend_medium,FontWeight.Medium),
-            Font(R.font.lexend_semibold,FontWeight.SemiBold),
-            Font(R.font.lexend_bold,FontWeight.Bold),
-            Font(R.font.lexend_extrabold,FontWeight.ExtraBold),
-            Font(R.font.lexend_extralight,FontWeight.ExtraLight)
+        val fontFamily = FontFamily(
+            Font(R.font.lexend_thin, FontWeight.Thin),
+            Font(R.font.lexend_light, FontWeight.Light),
+            Font(R.font.lexend_regular, FontWeight.Normal),
+            Font(R.font.lexend_medium, FontWeight.Medium),
+            Font(R.font.lexend_semibold, FontWeight.SemiBold),
+            Font(R.font.lexend_bold, FontWeight.Bold),
+            Font(R.font.lexend_extrabold, FontWeight.ExtraBold),
+            Font(R.font.lexend_extralight, FontWeight.ExtraLight)
         )
 
 
@@ -74,7 +77,6 @@ class MainActivity : ComponentActivity() {
 //                Text(text = "Good Eve")
 
 
-
 //            ImageCard
 
 
@@ -84,46 +86,103 @@ class MainActivity : ComponentActivity() {
 //            ImageCard(painter =painter, title =title, contentDescription =description)
 
 
-
 //        Text Styling
 
 
-            Box(modifier = Modifier
-                .background(Color(0xFF101010))
-                .fillMaxSize(),
-                contentAlignment = Alignment.Center) {
-                Text(
-                    text = buildAnnotatedString {
-                        withStyle(
-                            style= SpanStyle(
-                                color=Color.Green,
-                                fontSize = 50.sp,
-                                textDecoration = TextDecoration.None
-                            )
-                        ){
-                            append("J")
-                        }
-                        append("etpack ")
-                        withStyle(
-                            style= SpanStyle(
-                                color=Color.Green,
-                                fontSize = 50.sp,
-                                textDecoration = TextDecoration.None
-                            )
-                        ) {
-                            append("C")
-                        }
-                        append("ompose")
+//            Box(modifier = Modifier
+//                .background(Color(0xFF101010))
+//                .fillMaxSize(),
+//                contentAlignment = Alignment.Center) {
+//                Text(
+//                    text = buildAnnotatedString {
+//                        withStyle(
+//                            style= SpanStyle(
+//                                color=Color.Green,
+//                                fontSize = 50.sp,
+//                                textDecoration = TextDecoration.None
+//                            )
+//                        ){
+//                            append("J")
+//                        }
+//                        append("etpack ")
+//                        withStyle(
+//                            style= SpanStyle(
+//                                color=Color.Green,
+//                                fontSize = 50.sp,
+//                                textDecoration = TextDecoration.None
+//                            )
+//                        ) {
+//                            append("C")
+//                        }
+//                        append("ompose")
+//
+//                    },
+//                    color = Color.White,
+//                    fontSize = 30.sp,
+//                    fontFamily = fontFamily,
+//                    fontWeight = FontWeight.Bold,
+//                    fontStyle = FontStyle.Italic,
+////                    textAlign = TextAlign.Center
+//                    textDecoration = TextDecoration.Underline
+//                )
+//            }
 
-                    },
-                    color = Color.White,
-                    fontSize = 30.sp,
-                    fontFamily = fontFamily,
-                    fontWeight = FontWeight.Bold,
-                    fontStyle = FontStyle.Italic,
-//                    textAlign = TextAlign.Center
-                    textDecoration = TextDecoration.Underline
-                )
+
+//            State
+
+
+//            ColorBox(modifier = Modifier
+//                .fillMaxSize())
+
+//            Snackbar
+
+
+//            val scaffoldState = rememberScaffoldState()
+//            var textFieldState by remember {
+//                mutableStateOf("")
+//            }
+//            val coroutine= rememberCoroutineScope()
+//            Scaffold(modifier = Modifier.fillMaxSize(),
+//                scaffoldState = scaffoldState ) {
+//                Column(horizontalAlignment = Alignment.CenterHorizontally,
+//                    verticalArrangement = Arrangement.Center,
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                        .padding(30.dp)) {
+//                        TextField(value = textFieldState,
+//                            label = {
+//                                Text(text = "Enter your name")
+//                            },
+//                            onValueChange = {
+//                                textFieldState=it
+//                            },
+//                            singleLine = true,
+//                            modifier = Modifier.fillMaxWidth())
+//                    Spacer(modifier = Modifier.height(16.dp))
+//                    Button(onClick = {
+//                        coroutine.launch {
+//                            scaffoldState.snackbarHostState.showSnackbar("Hello $textFieldState")
+//                        }
+//                    }) {
+//                        Text("Greet Me")
+//                    }
+//                }
+//            }
+
+//            List
+
+
+            LazyColumn{
+                items(500){
+                    Text(
+                        text = "item ${it+1}",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier
+                            .padding(12.dp)
+                            .fillMaxWidth())
+                }
             }
         }
     }
@@ -165,4 +224,22 @@ class MainActivity : ComponentActivity() {
 //                }
 //        }
 //    }
+//}
+
+//@Composable
+//fun ColorBox(modifier: Modifier){
+//    val color= remember {
+//        mutableStateOf(Color.Yellow)
+//    }
+//    Box(modifier = modifier
+//        .background(color.value)
+//        .clickable {
+//            color.value = Color(
+//                Random.nextFloat(),
+//                Random.nextFloat(),
+//                Random.nextFloat(),
+//                1f
+//            )
+//        }
+//    )
 //}
