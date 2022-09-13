@@ -55,26 +55,23 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
-
-//            Rows & Columns
-
-
-//            Column(modifier = Modifier
+            Column(modifier = Modifier
 //                .padding(150.dp)
-////                .padding(175.dp,375.dp,175.dp,400.dp)
-////                .width(250.dp)
-////                .fillMaxHeight(0.7f)
-////                .requiredWidth(600.dp)
+//                .padding(175.dp,375.dp,175.dp,400.dp)
+//                .width(250.dp)
+//                .fillMaxHeight(0.7f)
+//                .requiredWidth(600.dp)
 //                .border(2.dp, Color.Yellow)
-//                .background(Color.Gray),
-//                horizontalAlignment = Alignment.CenterHorizontally,
-//                verticalArrangement = Arrangement.Center
-//            ) {
-//                Text(text = "Hello")
-////                Text(text = "Hello", modifier = Modifier.offset(0.dp,30.dp))
-////                Spacer(modifier = Modifier.height(50.dp))
-//                Text(text = "World")
-//                Text(text = "Good Eve")
+                .background(Color.Gray),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(text = "Hello")
+//                Text(text = "Hello", modifier = Modifier.offset(0.dp,30.dp))
+//                Spacer(modifier = Modifier.height(50.dp))
+                Text(text = "World")
+                Text(text = "Good Eve")
+            }
 
 
 //            ImageCard
@@ -171,19 +168,19 @@ class MainActivity : ComponentActivity() {
 
 //            List
 
-
-            LazyColumn{
-                items(500){
-                    Text(
-                        text = "item ${it+1}",
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier
-                            .padding(12.dp)
-                            .fillMaxWidth())
-                }
-            }
+//
+//            LazyColumn{
+//                items(500){
+//                    Text(
+//                        text = "item ${it+1}",
+//                        fontSize = 24.sp,
+//                        fontWeight = FontWeight.Bold,
+//                        textAlign = TextAlign.Center,
+//                        modifier = Modifier
+//                            .padding(12.dp)
+//                            .fillMaxWidth())
+//                }
+//            }
         }
     }
 }
