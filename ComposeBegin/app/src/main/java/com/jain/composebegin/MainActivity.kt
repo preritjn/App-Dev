@@ -55,33 +55,39 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
-            Column(modifier = Modifier
-//                .padding(150.dp)
-//                .padding(175.dp,375.dp,175.dp,400.dp)
-//                .width(250.dp)
-//                .fillMaxHeight(0.7f)
-//                .requiredWidth(600.dp)
-//                .border(2.dp, Color.Yellow)
-                .background(Color.Gray),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Text(text = "Hello")
-//                Text(text = "Hello", modifier = Modifier.offset(0.dp,30.dp))
-//                Spacer(modifier = Modifier.height(50.dp))
-                Text(text = "World")
-                Text(text = "Good Eve")
-            }
+//            Column(modifier = Modifier
+////                .padding(150.dp)
+////                .padding(175.dp,375.dp,175.dp,400.dp)
+////                .width(250.dp)
+////                .fillMaxHeight(0.7f)
+////                .requiredWidth(600.dp)
+////                .border(2.dp, Color.Yellow)
+//                .background(Color.Gray),
+//                horizontalAlignment = Alignment.CenterHorizontally,
+//                verticalArrangement = Arrangement.Center
+//            ) {
+//                Text(text = "Hello")
+////                Text(text = "Hello", modifier = Modifier.offset(0.dp,30.dp))
+////                Spacer(modifier = Modifier.height(50.dp))
+//                Text(text = "World")
+//                Text(text = "Good Eve")
+//            }
+
+//            Row(horizontalArrangement = Arrangement.Center,
+//            verticalAlignment = Alignment.CenterVertically){
+//                Text(text="Jetpack")
+//                Text(text = "Compose")
+//            }
 
 
 //            ImageCard
 
 
 //            val painter = painterResource(id = R.drawable.image)
-//            val description = "Branch Fest of Computer Science and Engineering Dept."
-//            val title = "Branch Fest of CSE Dept."
+//            val description = "THIS PICTURE"
+//            val title = "THIS PICTURE"
 //            ImageCard(painter =painter, title =title, contentDescription =description)
-
+//
 
 //        Text Styling
 
