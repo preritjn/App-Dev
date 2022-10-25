@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">transition</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="last_activity">Last Activity</string>
+    <string name="go_back">Go Back</string>
+    <string name="first_activity">First Activity</string>
+</resources>

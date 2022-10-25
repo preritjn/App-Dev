@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addContact"
+        android:title="@string/add_contact"
+        android:icon="@drawable/ic_addcontact"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/favourite"
+        android:title="@string/favourite"
+        android:icon="@drawable/ic_favourite"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/closeApp"
+        android:title="@string/back"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Feedback"
+        android:title="@string/give_feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nxtActivity"
+        android:title="@string/next_activity"
+        app:showAsAction="never"/>
+
+</menu>

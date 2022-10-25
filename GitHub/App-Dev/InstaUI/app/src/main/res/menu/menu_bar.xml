@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miAdd"
+        android:title="@string/add"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/miPost"
+                android:title="@string/post"
+                android:icon="@drawable/ic_post"/>
+
+            <item
+                android:id="@+id/miStory"
+                android:title="@string/story"
+                android:icon="@drawable/ic_addstory"/>
+
+            <item
+                android:id="@+id/miReel"
+                android:title="@string/reel"
+                android:icon="@drawable/ic_reels"/>
+
+            <item
+                android:id="@+id/miLive"
+                android:title="@string/live"
+                android:icon="@drawable/ic_live"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/miMessage"
+        android:title="@string/messages"
+        android:icon="@drawable/ic_message"
+        app:showAsAction="ifRoom"/>
+</menu>

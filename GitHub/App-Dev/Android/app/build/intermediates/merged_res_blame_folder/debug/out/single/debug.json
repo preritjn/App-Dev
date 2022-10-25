@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-hdpi_ic_notification.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-hdpi\\ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-anydpi_ic_icon.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-anydpi\\ic_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-anydpi_ic_settings.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-anydpi\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-anydpi_ic_favourite.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-anydpi\\ic_favourite.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-mdpi_ic_addcontact.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-mdpi\\ic_addcontact.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xhdpi_ic_notification.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xhdpi\\ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\menu_appbar_menu.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\menu\\appbar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xhdpi_ic_addcontact.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xhdpi\\ic_addcontact.png"
+    },
+    {
+        "merged": "com.jain.android.app-merged_res-45:/layout_activity_main.xml.flat",
+        "source": "com.jain.android.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_activity_fifth.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\activity_fifth.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xxhdpi_ic_icon.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xxhdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_custom_toast.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\custom_toast.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xhdpi_ic_favourite.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xhdpi\\ic_favourite.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_item_todo.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\item_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-mdpi_ic_notification.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-mdpi\\ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_activity_fourth.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\activity_fourth.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-hdpi_ic_favourite.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-hdpi\\ic_favourite.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-hdpi_ic_icon.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-hdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-anydpi_ic_notification.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-anydpi\\ic_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xxhdpi_ic_notification.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xxhdpi\\ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-anydpi_ic_addcontact.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-anydpi\\ic_addcontact.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xxhdpi_ic_favourite.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xxhdpi\\ic_favourite.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-mdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-mdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-mdpi_ic_icon.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-mdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xxhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xxhdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-mdpi_ic_favourite.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-mdpi\\ic_favourite.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_activity_third.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\activity_third.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-hdpi_ic_addcontact.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-hdpi\\ic_addcontact.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xhdpi_ic_icon.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xhdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-xxhdpi_ic_addcontact.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-xxhdpi\\ic_addcontact.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\drawable-hdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\drawable-hdpi\\ic_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-merged_res-45:\\layout_activity_second.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\7.3.3\\com.jain.android.app-main-47:\\layout\\activity_second.xml"
+    }
+]
