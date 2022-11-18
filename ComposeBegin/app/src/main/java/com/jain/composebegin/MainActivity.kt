@@ -92,43 +92,43 @@ class MainActivity : ComponentActivity() {
 //        Text Styling
 
 
-//            Box(modifier = Modifier
-//                .background(Color(0xFF101010))
-//                .fillMaxSize(),
-//                contentAlignment = Alignment.Center) {
-//                Text(
-//                    text = buildAnnotatedString {
-//                        withStyle(
-//                            style= SpanStyle(
-//                                color=Color.Green,
-//                                fontSize = 50.sp,
-//                                textDecoration = TextDecoration.None
-//                            )
-//                        ){
-//                            append("J")
-//                        }
-//                        append("etpack ")
-//                        withStyle(
-//                            style= SpanStyle(
-//                                color=Color.Green,
-//                                fontSize = 50.sp,
-//                                textDecoration = TextDecoration.None
-//                            )
-//                        ) {
-//                            append("C")
-//                        }
-//                        append("ompose")
-//
-//                    },
-//                    color = Color.White,
-//                    fontSize = 30.sp,
-//                    fontFamily = fontFamily,
-//                    fontWeight = FontWeight.Bold,
-//                    fontStyle = FontStyle.Italic,
-////                    textAlign = TextAlign.Center
-//                    textDecoration = TextDecoration.Underline
-//                )
-//            }
+            Box(modifier = Modifier
+                .background(Color(0xFF101010))
+                .fillMaxSize(),
+                contentAlignment = Alignment.Center) {
+                Text(
+                    text = buildAnnotatedString {
+                        withStyle(
+                            style= SpanStyle(
+                                color=Color.Green,
+                                fontSize = 50.sp,
+                                textDecoration = TextDecoration.None
+                            )
+                        ){
+                            append("J")
+                        }
+                        append("etpack ")
+                        withStyle(
+                            style= SpanStyle(
+                                color=Color.Green,
+                                fontSize = 50.sp,
+                                textDecoration = TextDecoration.None
+                            )
+                        ) {
+                            append("C")
+                        }
+                        append("ompose")
+
+                    },
+                    color = Color.White,
+                    fontSize = 30.sp,
+                    fontFamily = fontFamily,
+                    fontWeight = FontWeight.Bold,
+                    fontStyle = FontStyle.Italic,
+                    textAlign = TextAlign.Center,
+                    textDecoration = TextDecoration.Underline
+                )
+            }
 
 
 //            State
