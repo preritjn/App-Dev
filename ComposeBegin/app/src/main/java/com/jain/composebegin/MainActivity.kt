@@ -205,7 +205,8 @@ fun ImageCard(
                     contentScale = ContentScale.FillBounds)
                 Box(modifier = Modifier
                     .fillMaxSize()
-                    .background(Brush.verticalGradient(
+                    .background(
+                        Brush.verticalGradient(
                         colors = listOf(
                             Color.Transparent,
                             Color.Black
