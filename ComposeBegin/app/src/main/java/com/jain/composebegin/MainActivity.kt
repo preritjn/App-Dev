@@ -192,57 +192,57 @@ class MainActivity : ComponentActivity() {
 }
 
 
-//@Composable
-//fun ImageCard(
-//    painter: Painter,
-//    title: String,
-//    contentDescription: String,
-//    modifier: Modifier =Modifier) {
-//        Card(modifier = modifier
-//            .fillMaxWidth(0.6f)
-//            .padding(18.dp),
-//            shape=RoundedCornerShape(15.dp),
-//            elevation = 5.dp) {
-//            Box(modifier = Modifier.height(200.dp)) {
-//                Image(painter = painter,
-//                    contentDescription = contentDescription,
-//                    contentScale = ContentScale.FillBounds)
-//                Box(modifier = Modifier
-//                    .fillMaxSize()
-//                    .background(Brush.verticalGradient(
-//                        colors = listOf(
-//                            Color.Transparent,
-//                            Color.Black
-//                        ),
-//                        startY = 300f
-//                    )))
-//                Box(modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(12.dp),
-//                    contentAlignment = Alignment.BottomCenter){
-//                    Text(
-//                        title, style = TextStyle(
-//                            color = Color.White, fontSize = 16.sp)
-//                    )
-//                }
-//        }
-//    }
-//}
+@Composable
+fun ImageCard(
+    painter: Painter,
+    title: String,
+    contentDescription: String,
+    modifier: Modifier =Modifier) {
+        Card(modifier = modifier
+            .fillMaxWidth(0.6f)
+            .padding(18.dp),
+            shape=RoundedCornerShape(15.dp),
+            elevation = 5.dp) {
+            Box(modifier = Modifier.height(200.dp)) {
+                Image(painter = painter,
+                    contentDescription = contentDescription,
+                    contentScale = ContentScale.FillBounds)
+                Box(modifier = Modifier
+                    .fillMaxSize()
+                    .background(Brush.verticalGradient(
+                        colors = listOf(
+                            Color.Transparent,
+                            Color.Black
+                        ),
+                        startY = 300f
+                    )))
+                Box(modifier = Modifier
+                    .fillMaxSize()
+                    .padding(12.dp),
+                    contentAlignment = Alignment.BottomCenter){
+                    Text(
+                        title, style = TextStyle(
+                            color = Color.White, fontSize = 16.sp)
+                    )
+                }
+        }
+    }
+}
 
-//@Composable
-//fun ColorBox(modifier: Modifier){
-//    val color= remember {
-//        mutableStateOf(Color.Yellow)
-//    }
-//    Box(modifier = modifier
-//        .background(color.value)
-//        .clickable {
-//            color.value = Color(
-//                Random.nextFloat(),
-//                Random.nextFloat(),
-//                Random.nextFloat(),
-//                1f
-//            )
-//        }
-//    )
-//}
+@Composable
+fun ColorBox(modifier: Modifier){
+    val color= remember {
+        mutableStateOf(Color.Yellow)
+    }
+    Box(modifier = modifier
+        .background(color.value)
+        .clickable {
+            color.value = Color(
+                Random.nextFloat(),
+                Random.nextFloat(),
+                Random.nextFloat(),
+                1f
+            )
+        }
+    )
+}
