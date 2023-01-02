@@ -79,18 +79,7 @@ class MainActivity : ComponentActivity() {
 //                Text(text = "Compose")
 //            }
 
-
-//            ImageCard
-
-
-//            val painter = painterResource(id = R.drawable.image)
-//            val description = "THIS PICTURE"
-//            val title = "THIS PICTURE"
-//            ImageCard(painter =painter, title =title, contentDescription =description)
-//
-
 //        Text Styling
-
 
             Box(modifier = Modifier
                 .background(Color(0xFF101010))
@@ -129,6 +118,13 @@ class MainActivity : ComponentActivity() {
                     textDecoration = TextDecoration.Underline
                 )
             }
+
+//            ImageCard
+
+            val painter = painterResource(id = R.drawable.image)
+            val description = "THIS PICTURE"
+            val title = "THIS PICTURE"
+            ImageCard(painter =painter, title =title, contentDescription =description)
 
 
 //            State
