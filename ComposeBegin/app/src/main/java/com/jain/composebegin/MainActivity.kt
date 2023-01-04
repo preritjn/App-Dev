@@ -1,9 +1,6 @@
 package com.jain.composebegin
 
-import android.accounts.AuthenticatorDescription
 import android.os.Bundle
-import android.os.ParcelFileDescriptor
-import android.view.RoundedCorner
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.*
@@ -20,7 +17,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -119,19 +115,30 @@ class MainActivity : ComponentActivity() {
                 )
             }
 
+//            State
+            Column(Modifier
+                .fillMaxSize()) {
+                val color = remember {
+                    mutableStateOf(Color.Gray)
+                }
+                ColorBox(modifier = Modifier
+                    .weight(1f)
+                    .fillMaxSize()) {
+                    color.value = it
+                }
+                Box(modifier = Modifier
+                    .background(color.value)
+                    .weight(1f)
+                    .fillMaxSize())
+            }
+
+
 //            ImageCard
 
             val painter = painterResource(id = R.drawable.image)
             val description = "THIS PICTURE"
             val title = "THIS PICTURE"
             ImageCard(painter =painter, title =title, contentDescription =description)
-
-
-//            State
-
-
-//            ColorBox(modifier = Modifier
-//                .fillMaxSize())
 
 //            Snackbar
 
@@ -207,12 +214,13 @@ fun ImageCard(
                     .fillMaxSize()
                     .background(
                         Brush.verticalGradient(
-                        colors = listOf(
-                            Color.Transparent,
-                            Color.Black
-                        ),
-                        startY = 300f
-                    )))
+                            colors = listOf(
+                                Color.Transparent,
+                                Color.Black
+                            ),
+                            startY = 300f
+                        )
+                    ))
                 Box(modifier = Modifier
                     .fillMaxSize()
                     .padding(12.dp),
@@ -229,19 +237,18 @@ fun ImageCard(
 }
 
 @Composable
-fun ColorBox(modifier: Modifier){
-    val color= remember {
-        mutableStateOf(Color.Yellow)
-    }
+fun ColorBox(modifier: Modifier = Modifier,
+    updateColor: (Color)-> Unit) {
+
     Box(modifier = modifier
-        .background(color.value)
+        .background(Color.Yellow)
         .clickable {
-            color.value = Color(
+            updateColor(Color(
                 Random.nextFloat(),
                 Random.nextFloat(),
                 Random.nextFloat(),
                 1f
-            )
+            ))
         }
     )
 }
