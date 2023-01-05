@@ -178,8 +178,8 @@ class MainActivity : ComponentActivity() {
 //            List
 
 //
-//            LazyColumn{
-//                items(500){
+//            LazyColumn {
+//                items(500) {
 //                    Text(
 //                        text = "item ${it+1}",
 //                        fontSize = 24.sp,
