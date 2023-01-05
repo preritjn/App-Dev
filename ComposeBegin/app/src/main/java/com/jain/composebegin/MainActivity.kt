@@ -77,68 +77,68 @@ class MainActivity : ComponentActivity() {
 
 //        Text Styling
 
-            Box(modifier = Modifier
-                .background(Color(0xFF101010))
-                .fillMaxSize(),
-                contentAlignment = Alignment.Center) {
-                Text(
-                    text = buildAnnotatedString {
-                        withStyle(
-                            style= SpanStyle(
-                                color=Color.Green,
-                                fontSize = 50.sp,
-                                textDecoration = TextDecoration.None
-                            )
-                        ){
-                            append("J")
-                        }
-                        append("etpack ")
-                        withStyle(
-                            style= SpanStyle(
-                                color=Color.Green,
-                                fontSize = 50.sp,
-                                textDecoration = TextDecoration.None
-                            )
-                        ) {
-                            append("C")
-                        }
-                        append("ompose")
-
-                    },
-                    color = Color.White,
-                    fontSize = 30.sp,
-                    fontFamily = fontFamily,
-                    fontWeight = FontWeight.Bold,
-                    fontStyle = FontStyle.Italic,
-                    textAlign = TextAlign.Center,
-                    textDecoration = TextDecoration.Underline
-                )
-            }
+//            Box(modifier = Modifier
+//                .background(Color(0xFF101010))
+//                .fillMaxSize(),
+//                contentAlignment = Alignment.Center) {
+//                Text(
+//                    text = buildAnnotatedString {
+//                        withStyle(
+//                            style= SpanStyle(
+//                                color=Color.Green,
+//                                fontSize = 50.sp,
+//                                textDecoration = TextDecoration.None
+//                            )
+//                        ){
+//                            append("J")
+//                        }
+//                        append("etpack ")
+//                        withStyle(
+//                            style= SpanStyle(
+//                                color=Color.Green,
+//                                fontSize = 50.sp,
+//                                textDecoration = TextDecoration.None
+//                            )
+//                        ) {
+//                            append("C")
+//                        }
+//                        append("ompose")
+//
+//                    },
+//                    color = Color.White,
+//                    fontSize = 30.sp,
+//                    fontFamily = fontFamily,
+//                    fontWeight = FontWeight.Bold,
+//                    fontStyle = FontStyle.Italic,
+//                    textAlign = TextAlign.Center,
+//                    textDecoration = TextDecoration.Underline
+//                )
+//            }
 
 //            State
-            Column(Modifier
-                .fillMaxSize()) {
-                val color = remember {
-                    mutableStateOf(Color.Gray)
-                }
-                ColorBox(modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()) {
-                    color.value = it
-                }
-                Box(modifier = Modifier
-                    .background(color.value)
-                    .weight(1f)
-                    .fillMaxSize())
-            }
+//            Column(Modifier
+//                .fillMaxSize()) {
+//                val color = remember {
+//                    mutableStateOf(Color.Gray)
+//                }
+//                ColorBox(modifier = Modifier
+//                    .weight(1f)
+//                    .fillMaxSize()) {
+//                    color.value = it
+//                }
+//                Box(modifier = Modifier
+//                    .background(color.value)
+//                    .weight(1f)
+//                    .fillMaxSize())
+//            }
 
 
 //            ImageCard
 
-            val painter = painterResource(id = R.drawable.image)
-            val description = "THIS PICTURE"
-            val title = "THIS PICTURE"
-            ImageCard(painter =painter, title =title, contentDescription =description)
+//            val painter = painterResource(id = R.drawable.image)
+//            val description = "THIS PICTURE"
+//            val title = "THIS PICTURE"
+//            ImageCard(painter =painter, title =title, contentDescription =description)
 
 //            Snackbar
 
