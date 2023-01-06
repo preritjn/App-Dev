@@ -351,7 +351,6 @@ fun CircularProgressBar(
     var animationPlayed by remember {
         mutableStateOf(false)
     }
-
     val currPercentage = animateFloatAsState(
         targetValue = if(animationPlayed)
                           percentage
@@ -362,11 +361,9 @@ fun CircularProgressBar(
             delayMillis = animDelay
         )
     )
-
     LaunchedEffect(key1 = true) {
         animationPlayed = true
     }
-
     Box(modifier = Modifier
         .size(radius * 2f),
         contentAlignment = Alignment.Center) {
@@ -386,6 +383,5 @@ fun CircularProgressBar(
             fontSize = fontSize,
             fontWeight = FontWeight.Bold
         )
-
     }
 }
