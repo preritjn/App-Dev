@@ -269,7 +269,8 @@ class MainActivity : ComponentActivity() {
 
             Box(modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center) {
-                CircularProgressBar(percentage = 0.8f, number = 200)
+                CircularProgressBar(percentage = 0.79f, number = 10248488
+                )
             }
         }
     }
@@ -341,7 +342,7 @@ fun CircularProgressBar(
     percentage : Float,
     number : Int,
     fontSize: TextUnit = 28.sp,
-    radius: Dp = 50.dp,
+    radius: Dp = 70.dp,
     color : Color = Color.Green,
     strokeWidth: Dp = 8.dp,
     animDuration: Int = 1000,
