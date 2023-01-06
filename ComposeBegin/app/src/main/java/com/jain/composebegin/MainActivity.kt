@@ -3,6 +3,8 @@ package com.jain.composebegin
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.animateColor
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -19,6 +21,8 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.layoutId
+import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
@@ -32,6 +36,10 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.constraintlayout.compose.ChainStyle
+import androidx.constraintlayout.compose.ConstraintLayout
+import androidx.constraintlayout.compose.ConstraintSet
+import androidx.constraintlayout.compose.Dimension
 import kotlinx.coroutines.launch
 import kotlin.random.Random
 
@@ -177,7 +185,6 @@ class MainActivity : ComponentActivity() {
 
 //            List
 
-//
 //            LazyColumn {
 //                items(500) {
 //                    Text(
@@ -190,6 +197,71 @@ class MainActivity : ComponentActivity() {
 //                            .fillMaxWidth())
 //                }
 //            }
+
+//            Constraints Layout
+
+//            val constraints = ConstraintSet {
+//                val greenBox = createRefFor("greenbox")
+//                val redBox = createRefFor("redbox")
+//
+//                constrain(greenBox) {
+//                    top.linkTo(parent.top)
+//                    start.linkTo(parent.start)
+//                    width = Dimension.value(100.dp)
+//                    height = Dimension.value(100.dp)
+//                }
+//                constrain(redBox) {
+//                    top.linkTo(parent.top)
+//                    start.linkTo(greenBox.end)
+//                    end.linkTo(parent.end)
+//                    width = Dimension.value(100.dp)
+//                    height = Dimension.value(100.dp)
+//                }
+//                createHorizontalChain(greenBox,redBox, chainStyle = ChainStyle.Packed)
+//            }
+//            ConstraintLayout(constraints, modifier = Modifier
+//                .fillMaxSize()) {
+//                Box(modifier = Modifier
+//                    .background(Color.Red)
+//                    .layoutId("redbox"))
+//                Box(modifier = Modifier
+//                    .background(Color.Green)
+//                    .layoutId("greenbox"))
+//            }
+
+            var sizeState by remember  {
+                mutableStateOf(200.dp)
+            }
+            val size by animateDpAsState(
+                targetValue = sizeState,
+                tween(
+                    durationMillis = 1000
+                )
+            )
+            val infiniteAnimation = rememberInfiniteTransition()
+            val color by infiniteAnimation.animateColor(
+                initialValue = Color.Red,
+                targetValue = Color.Green,
+                animationSpec = infiniteRepeatable(
+                    tween(durationMillis = 2000),
+                    repeatMode = RepeatMode.Reverse
+                )
+            )
+            Box(modifier = Modifier
+                .background(color)
+                .size(size),
+                contentAlignment = Alignment.Center) {
+                Column(verticalArrangement = Arrangement.SpaceEvenly) {
+                    Button(onClick = {
+                        sizeState += 50.dp }) {
+                        Text(text = "Increase size")
+                    }
+                    Button(onClick = {
+                        sizeState -= 50.dp }) {
+                        Text(text = "Decrease size")
+                    }
+                }
+            }
         }
     }
 }
@@ -243,12 +315,14 @@ fun ColorBox(modifier: Modifier = Modifier,
     Box(modifier = modifier
         .background(Color.Yellow)
         .clickable {
-            updateColor(Color(
-                Random.nextFloat(),
-                Random.nextFloat(),
-                Random.nextFloat(),
-                1f
-            ))
+            updateColor(
+                Color(
+                    Random.nextFloat(),
+                    Random.nextFloat(),
+                    Random.nextFloat(),
+                    1f
+                )
+            )
         }
     )
 }
