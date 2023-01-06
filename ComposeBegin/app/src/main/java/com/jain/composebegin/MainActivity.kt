@@ -19,6 +19,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.layoutId
@@ -34,6 +36,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ChainStyle
@@ -229,38 +233,43 @@ class MainActivity : ComponentActivity() {
 //                    .layoutId("greenbox"))
 //            }
 
-            var sizeState by remember  {
-                mutableStateOf(200.dp)
-            }
-            val size by animateDpAsState(
-                targetValue = sizeState,
-                tween(
-                    durationMillis = 1000
-                )
-            )
-            val infiniteAnimation = rememberInfiniteTransition()
-            val color by infiniteAnimation.animateColor(
-                initialValue = Color.Red,
-                targetValue = Color.Green,
-                animationSpec = infiniteRepeatable(
-                    tween(durationMillis = 2000),
-                    repeatMode = RepeatMode.Reverse
-                )
-            )
-            Box(modifier = Modifier
-                .background(color)
-                .size(size),
-                contentAlignment = Alignment.Center) {
-                Column(verticalArrangement = Arrangement.SpaceEvenly) {
-                    Button(onClick = {
-                        sizeState += 50.dp }) {
-                        Text(text = "Increase size")
-                    }
-                    Button(onClick = {
-                        sizeState -= 50.dp }) {
-                        Text(text = "Decrease size")
-                    }
-                }
+//            var sizeState by remember  {
+//                mutableStateOf(200.dp)
+//            }
+//            val size by animateDpAsState(
+//                targetValue = sizeState,
+//                tween(
+//                    durationMillis = 1000
+//                )
+//            )
+//            val infiniteAnimation = rememberInfiniteTransition()
+//            val color by infiniteAnimation.animateColor(
+//                initialValue = Color.Red,
+//                targetValue = Color.Green,
+//                animationSpec = infiniteRepeatable(
+//                    tween(durationMillis = 2000),
+//                    repeatMode = RepeatMode.Reverse
+//                )
+//            )
+//            Box(modifier = Modifier
+//                .background(color)
+//                .size(size),
+//                contentAlignment = Alignment.Center) {
+//                Column(verticalArrangement = Arrangement.SpaceEvenly) {
+//                    Button(onClick = {
+//                        sizeState += 50.dp }) {
+//                        Text(text = "Increase size")
+//                    }
+//                    Button(onClick = {
+//                        sizeState -= 50.dp }) {
+//                        Text(text = "Decrease size")
+//                    }
+//                }
+//            }
+
+            Box(modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center) {
+                CircularProgressBar(percentage = 0.8f, number = 200)
             }
         }
     }
@@ -325,4 +334,57 @@ fun ColorBox(modifier: Modifier = Modifier,
             )
         }
     )
+}
+
+@Composable
+fun CircularProgressBar(
+    percentage : Float,
+    number : Int,
+    fontSize: TextUnit = 28.sp,
+    radius: Dp = 50.dp,
+    color : Color = Color.Green,
+    strokeWidth: Dp = 8.dp,
+    animDuration: Int = 1000,
+    animDelay: Int = 0
+) {
+    var animationPlayed by remember {
+        mutableStateOf(false)
+    }
+
+    val currPercentage = animateFloatAsState(
+        targetValue = if(animationPlayed)
+                          percentage
+                      else
+                          0f,
+        tween(
+            durationMillis = animDuration,
+            delayMillis = animDelay
+        )
+    )
+
+    LaunchedEffect(key1 = true) {
+        animationPlayed = true
+    }
+
+    Box(modifier = Modifier
+        .size(radius * 2f),
+        contentAlignment = Alignment.Center) {
+        Canvas(modifier = Modifier
+            .size(radius * 2f)) {
+            drawArc(
+                color = color,
+                -90f,
+                360 * currPercentage.value,
+                useCenter = false,
+                style = Stroke(strokeWidth.toPx(), cap = StrokeCap.Round)
+            )
+        }
+        Text(
+            text = (currPercentage.value * number).toInt().toString(),
+            color = Color.Black,
+            fontSize = fontSize,
+            fontWeight = FontWeight.Bold
+        )
+
+    }
 }
