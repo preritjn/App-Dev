@@ -288,6 +288,7 @@ class MainActivity : ComponentActivity() {
 //            }
 
 //            Music Knob
+
             Box(contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .fillMaxSize()
@@ -460,7 +461,7 @@ fun VolumeBar(
 @Composable
 fun MusicKnob(
     modifier: Modifier = Modifier,
-    limitingAngle: Float = 25f,
+    limitingAngle: Float = 5f,
     onValueChanged: (Float) -> Unit
 ) {
     var rotation by remember {
