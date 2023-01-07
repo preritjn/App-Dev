@@ -144,7 +144,6 @@ class MainActivity : ComponentActivity() {
 //                    .fillMaxSize())
 //            }
 
-
 //            ImageCard
 
 //            val painter = painterResource(id = R.drawable.image)
@@ -267,11 +266,11 @@ class MainActivity : ComponentActivity() {
 //                }
 //            }
 
-            Box(modifier = Modifier.fillMaxSize(),
-            contentAlignment = Alignment.Center) {
-                CircularProgressBar(percentage = 0.79f, number = 10248488
-                )
-            }
+//            Box(modifier = Modifier.fillMaxSize(),
+//            contentAlignment = Alignment.Center) {
+//                CircularProgressBar(percentage = 0.79f, number = 10248488
+//                )
+//            }
         }
     }
 }
@@ -321,7 +320,6 @@ fun ImageCard(
 @Composable
 fun ColorBox(modifier: Modifier = Modifier,
     updateColor: (Color)-> Unit) {
-
     Box(modifier = modifier
         .background(Color.Yellow)
         .clickable {
