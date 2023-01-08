@@ -28,6 +28,7 @@ fun HomeScreen() {
         .fillMaxSize()
         .background(DeepBlue)) {
         Column {
+            Spacer(modifier = Modifier.height(20.dp))
             GreetingSection(name = "Prerit")
             ChipSection(chips = listOf("Madarchod","Randi","Dari","Betichod","Chuttadchod","Bala","Maghiya"))
             CurrentMeditation()
