@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
@@ -29,6 +30,7 @@ fun HomeScreen() {
         Column {
             GreetingSection(name = "Prerit")
             ChipSection(chips = listOf("Madarchod","Randi","Dari","Betichod","Chuttadchod","Bala","Maghiya"))
+            CurrentMeditation()
         }
     }
 }
@@ -44,12 +46,13 @@ fun GreetingSection(name: String) {
     ) {
         Column(verticalArrangement = Arrangement.Center
         ) {
-            Text(text = "Good Morning, $name", 
+            Text(text = "Good Morning, $name",
                 style = MaterialTheme.typography.h4,
-            color = Color.White)
+                color = Color.White)
             Text(text = "We wish you to have a good day!!",
                 style = MaterialTheme.typography.body1,
-            color = TextWhite)
+                color = TextWhite
+            )
         }
         Icon(painter = painterResource(id = R.drawable.ic_search),
             contentDescription = "Search",
@@ -81,12 +84,50 @@ fun ChipSection(
                         else
                             DarkerButtonBlue
                     )
-                    .padding(15.dp)
-            )
-            {
+            ) {
                 Text(text = chips[it],
-                    color = TextWhite)
+                    color = TextWhite,
+                    modifier = Modifier.padding(15.dp))
             }
+        }
+    }
+}
+
+@Composable
+fun CurrentMeditation(
+    color: Color = LightRed
+) {
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .padding(15.dp)
+            .clip(RoundedCornerShape(10.dp))
+            .background(color)
+            .padding(horizontal = 15.dp, vertical = 20.dp)
+            .fillMaxWidth()
+    ) {
+        Column {
+            Text(text = "Daily Thoughts",
+                style = MaterialTheme.typography.h4,
+                color = TextWhite
+            )
+            Text(
+                text = "Meditation * 3-10 min",
+                style = MaterialTheme.typography.body1,
+                color = TextWhite
+            )
+        }
+        Box(contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+                .background(ButtonBlue)
+        ) {
+            Icon(painter = painterResource(id = R.drawable.ic_play),
+                contentDescription ="Play",
+                tint = Color.White,
+                modifier = Modifier.size(17.dp))
         }
     }
 }
