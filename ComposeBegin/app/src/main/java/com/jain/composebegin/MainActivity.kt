@@ -551,14 +551,14 @@ fun DropDown(
         mutableStateOf(initiallyOpened)
     }
 
-    var alpha = animateFloatAsState(
+    val alpha = animateFloatAsState(
         targetValue = if(isOpen) 1f else 0f,
         animationSpec = tween(
             durationMillis = 300
         )
     )
 
-    var rotateX = animateFloatAsState(
+    val rotateX = animateFloatAsState(
         targetValue = if(isOpen) 0f else -90f,
         animationSpec = tween(
             durationMillis = 300
@@ -602,6 +602,5 @@ fun DropDown(
         ) {
             content()
         }
-        
     }
 }
